@@ -88,7 +88,15 @@
       min-height: 260px;
       overflow: hidden;
     }
-    .hero-img-el,
+.hero-img-el {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* instead of cover */
+  background: #000;      /* optional, behind letterbox bars */
+}
+    
     .feat-img-el,
     .acard-img-el {
       position: absolute;
