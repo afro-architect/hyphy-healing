@@ -99,24 +99,15 @@
 
  
 
-.feat-img {
-  width: 100%;
-  height: 280px;
-  background: var(--charcoal);
-  position: relative;
-  overflow: hidden;
-}
-
-.feat-img-el {
-  position: absolute;
-  left: 50%;
-  top: 50%;             /* start from the center */
-  min-width: 100%;
-  height: auto;
-  transform: translate(-50%, -50%);  /* or (-50%, -45%) to push down slightly */
-  object-fit: cover;
-  display: block;
-}
+ .feat-img-el,
+    .acard-img-el {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
     .mini-cal {
   border-radius: 10px;
