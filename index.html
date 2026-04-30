@@ -82,14 +82,12 @@
     .acard-body{padding:1.5rem;}
     .acard-body h3{font-family:var(--font-d);font-size:1.55rem;font-weight:400;line-height:1.15;margin-bottom:.6rem;letter-spacing:.02em;color:var(--black);}
 
-  /* image helpers */
-.hero-img {
+    /* image helpers */
+    .hero-img {
   position: relative;
-  height: 420px;          /* keep your chosen height */
-  overflow-x: hidden;     /* NEW: hide sideways overflow only */
-  overflow-y: visible;    /* keep vertical overflow so the image can sit low */
+  height: 420px;   /* fixed height to control cropping */
+  overflow: visible;
 }
-
 .hero-img-el {
   position: absolute;
   top: 40%;
@@ -98,6 +96,7 @@
   height: auto;
   transform: translate(-50%, -25%);
 }
+   
 
 /* feature image container stays constrained to the grid column */
 .feat-img {
@@ -111,6 +110,7 @@
 /* image framed lower, but never wider than the card */
 .feat-img-el {
   position: absolute;
+  inset: 0;
   left: 50%;
   top: 50%;              /* start centered */
   min-width: 100%;       /* make sure it fills horizontally */
