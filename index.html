@@ -82,12 +82,13 @@
     .acard-body{padding:1.5rem;}
     .acard-body h3{font-family:var(--font-d);font-size:1.55rem;font-weight:400;line-height:1.15;margin-bottom:.6rem;letter-spacing:.02em;color:var(--black);}
 
-    /* image helpers */
-    .hero-img {
+  /* image helpers */
+.hero-img {
   position: relative;
-  height: 420px;   /* fixed height to control cropping */
-  overflow: visible;
+  height: 420px;    /* or whatever height you like */
+  overflow: hidden; /* was visible */
 }
+
 .hero-img-el {
   position: absolute;
   top: 40%;
@@ -96,22 +97,20 @@
   height: auto;
   transform: translate(-50%, -25%);
 }
-   
 
-    
+/* feature image */
 .feat-img {
   width: 100%;
-  height: 280px;             /* your original height */
+  height: 280px;
   background: var(--charcoal);
   position: relative;
   overflow: hidden;
 }
 
-/* for the cropped feature image */
 .feat-img-el {
   position: absolute;
   left: 50%;
-  top: 60%;                  /* >50 pushes the visible area down */
+  top: 60%;
   width: 100%;
   height: auto;
   transform: translate(-50%, -50%);
