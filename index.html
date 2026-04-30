@@ -253,18 +253,27 @@
   margin-top: 0.25rem;
 }
 
- .mv-p{
-  /* keep it from blowing up in wider layouts */
-  max-width:100%;
+.mv{
+  display:flex;
+  gap:0.75rem;        /* if you’re not already doing this */
 }
 
+.mv-p{
+  flex:0 0 80px;      /* fixed-ish poster strip */
+}
+
+.mv-i{
+  flex:1 1 auto;      /* text takes the remaining width */
+}
+
+    /* Keep the image inside its box without affecting columns */
 .mv-p img{
   display:block;
-  width:100%;
+  width:100%;         /* let it fill whatever width the layout gives */
   height:auto;
-  max-height:160px;      /* adjust to taste */
-  object-fit:cover;      /* crop rather than squish [web:57][web:66] */
-  border-radius:8px;     /* optional: match card radius */
+  max-height:160px;   /* or 140px, 180px, whatever feels right */
+  object-fit:cover;
+  border-radius:8px;
 }
     
   </style>
