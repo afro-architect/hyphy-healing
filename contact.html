@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact · Hyphy & Healing | Bay Area Wellness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --red:#D72B2B;--red-dark:#A61E1E;
+      --blue:#1A3A8F;--blue-mid:#2450B5;--blue-light:#3D6FD4;--blue-pale:#E8EEFF;
+      --white:#FAFAFA;--off-white:#F2F0EB;
+      --black:#0C0C0C;--charcoal:#1C1C1E;--gray:#3A3A3C;--gray-mid:#6E6E73;--gray-light:#D1D1D6;
+      --border:rgba(12,12,12,0.1);
+      --font-d:'Bebas Neue',sans-serif;
+      --font-b:'DM Sans',sans-serif;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      background:var(--off-white);
+      color:var(--black);
+      font-family:var(--font-b);
+      font-size:16px;
+      line-height:1.7;
+    }
+
+    /* NAV */
+    nav{
+      background:var(--black);
+      position:sticky;
+      top:0;
+      z-index:100;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 2.5rem;
+      height:62px;
+      border-bottom:3px solid var(--red);
+    }
+    .nav-logo{
+      font-family:var(--font-d);
+      font-size:1.6rem;
+      letter-spacing:.04em;
+      color:#fff;
+      text-decoration:none;
+    }
+    .nav-logo span{color:var(--red);}
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:2rem;
+      align-items:center;
+    }
+    nav a{
+      font-family:var(--font-b);
+      font-size:.85rem;
+      font-weight:600;
+      color:rgba(255,255,255,.55);
+      text-decoration:none;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      transition:color .2s;
+      padding:4px 0;
+      border-bottom:2px solid transparent;
+    }
+    nav a:hover{color:#fff;}
+    nav a.active{
+      color:#fff;
+      border-bottom-color:var(--red);
+    }
+
+    /* CONTACT PAGE */
+    .contact-wrap{
+      max-width:960px;
+      margin:0 auto;
+      padding:3rem 2rem 4rem;
+    }
+
+    .contact-pg{
+      max-width:720px;
+      margin:3rem auto 0;
+      padding:3rem 2.5rem 2.5rem;
+      background:#fff;
+      border:1px solid var(--border);
+      box-shadow:0 2px 20px rgba(0,0,0,.06);
+      border-radius:16px;
+    }
+
+    .contact-pg h1{
+      font-family:var(--font-d);
+      font-size:2.6rem;
+      letter-spacing:.06em;
+      margin-bottom:0.75rem;
+      color:var(--black);
+    }
+
+    .contact-pg h1 em{
+      font-style:normal;
+      color:var(--red);
+    }
+
+    .contact-pg p{
+      font-size:.98rem;
+      line-height:1.8;
+      color:var(--gray);
+      margin-bottom:1.25rem;
+    }
+
+    .cf{
+      margin-top:1.5rem;
+      display:flex;
+      flex-direction:column;
+      gap:1rem;
+    }
+
+    .fg{
+      display:flex;
+      flex-direction:column;
+      gap:.3rem;
+    }
+
+    .fg label{
+      font-size:.85rem;
+      font-weight:600;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      color:var(--gray-mid);
+    }
+
+    .fg input,
+    .fg textarea{
+      font-family:var(--font-b);
+      font-size:.95rem;
+      padding:.55rem .65rem;
+      border-radius:8px;
+      border:1px solid var(--border);
+      background:#F9FAFB;
+      color:var(--black);
+      outline:none;
+    }
+
+    .fg input:focus,
+    .fg textarea:focus{
+      border-color:var(--blue-mid);
+      box-shadow:0 0 0 1px rgba(36,80,181,.2);
+      background:#fff;
+    }
+
+    .fg textarea{
+      min-height:120px;
+      resize:vertical;
+    }
+
+    .sub-btn{
+      margin-top:.5rem;
+      padding:.6rem 1.3rem;
+      border-radius:999px;
+      border:none;
+      font-family:var(--font-b);
+      font-size:.85rem;
+      font-weight:700;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      background:rgba(26,58,143,.2);
+      color:rgba(31,41,55,.7);
+      cursor:not-allowed;
+    }
+
+    .sub-note{
+      font-size:.8rem;
+      color:var(--gray-mid);
+      margin-top:.35rem;
+    }
+
+    .contact-back{
+      display:inline-block;
+      margin-top:1.75rem;
+      font-size:.85rem;
+      font-weight:600;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--blue);
+      text-decoration:none;
+    }
+    .contact-back:hover{color:var(--red);}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Hyphy <span>&amp; Healing</span></a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="contact-wrap">
+    <section class="contact-pg">
+      <h1>Get in <em>Touch</em></h1>
+      <p>
+        Have a wellness event to share or want to connect with the Hyphy &amp; Healing team?
+        Drop us a line and we’ll reach out once the full site is live.
+      </p>
+
+      <div class="cf">
+        <div class="fg">
+          <label>Your Name</label>
+          <input type="text" placeholder="e.g. Destiny Mosley">
+        </div>
+
+        <div class="fg">
+          <label>Email Address</label>
+          <input type="email" placeholder="you@example.com">
+        </div>
+
+        <div class="fg">
+          <label>Message</label>
+          <textarea placeholder="Tell us about your wellness event, collab idea, or story tip..."></textarea>
+        </div>
+
+        <button class="sub-btn" disabled>Submit (Coming Soon)</button>
+        <p class="sub-note">This form isn’t active yet — we’ll be accepting submissions soon.</p>
+      </div>
+
+      <a class="contact-back" href="index.html">← Back to Home</a>
+    </section>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About · Hyphy & Healing | Bay Area Wellness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --red:#D72B2B;--red-dark:#A61E1E;
+      --blue:#1A3A8F;--blue-mid:#2450B5;--blue-light:#3D6FD4;--blue-pale:#E8EEFF;
+      --white:#FAFAFA;--off-white:#F2F0EB;
+      --black:#0C0C0C;--charcoal:#1C1C1E;--gray:#3A3A3C;--gray-mid:#6E6E73;--gray-light:#D1D1D6;
+      --border:rgba(12,12,12,0.1);
+      --font-d:'Bebas Neue',sans-serif;
+      --font-b:'DM Sans',sans-serif;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      background:var(--off-white);
+      color:var(--black);
+      font-family:var(--font-b);
+      font-size:16px;
+      line-height:1.7;
+    }
+
+    /* NAV (reused) */
+    nav{
+      background:var(--black);
+      position:sticky;
+      top:0;
+      z-index:100;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 2.5rem;
+      height:62px;
+      border-bottom:3px solid var(--red);
+    }
+    .nav-logo{
+      font-family:var(--font-d);
+      font-size:1.6rem;
+      letter-spacing:.04em;
+      color:#fff;
+      text-decoration:none;
+    }
+    .nav-logo span{color:var(--red);}
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:2rem;
+      align-items:center;
+    }
+    nav a{
+      font-family:var(--font-b);
+      font-size:.85rem;
+      font-weight:600;
+      color:rgba(255,255,255,.55);
+      text-decoration:none;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      transition:color .2s;
+      padding:4px 0;
+      border-bottom:2px solid transparent;
+    }
+    nav a:hover{color:#fff;}
+    nav a.active{
+      color:#fff;
+      border-bottom-color:var(--red);
+    }
+
+    /* ABOUT PAGE */
+    .about-pg-wrap{
+      max-width:960px;
+      margin:0 auto;
+      padding:3rem 2rem 4rem;
+    }
+
+    .about-pg{
+      max-width:720px;
+      margin:3rem auto 0;
+      padding:3rem 2.5rem;
+      background:#fff;
+      border:1px solid var(--border);
+      box-shadow:0 2px 20px rgba(0,0,0,.06);
+      border-radius:16px;
+    }
+
+    .about-pg h1{
+      font-family:var(--font-d);
+      font-size:2.8rem;
+      letter-spacing:.06em;
+      margin-bottom:1.75rem;
+      color:var(--black);
+    }
+
+    .about-tagline{
+      font-size:.9rem;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      font-weight:700;
+      color:var(--red);
+      margin-bottom:.75rem;
+    }
+
+    .about-pg h2{
+      font-family:var(--font-d);
+      font-size:1.6rem;
+      letter-spacing:.04em;
+      margin:2rem 0 0.75rem;
+      color:var(--black);
+    }
+
+    .about-pg p{
+      font-size:.98rem;
+      line-height:1.8;
+      color:var(--gray);
+      margin-bottom:1rem;
+    }
+
+    .about-list{
+      margin:0 0 1.25rem 0;
+      padding-left:1.1rem;
+      font-size:.95rem;
+      color:var(--gray);
+    }
+    .about-list li{margin-bottom:.4rem;}
+
+    .about-back{
+      display:inline-block;
+      margin-top:1.5rem;
+      font-size:.85rem;
+      font-weight:600;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--blue);
+      text-decoration:none;
+    }
+    .about-back:hover{color:var(--red);}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Hyphy <span>&amp; Healing</span></a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="about-pg-wrap">
+    <section class="about-pg">
+      <div class="about-tagline">About</div>
+      <h1>Hyphy &amp; Healing</h1>
+
+      <p>
+        Hyphy &amp; Healing is a Bay Area–rooted project that treats joy, movement,
+        and community care as real mental health tools for teens.
+      </p>
+      <p>
+        We highlight neighborhood classes, community centers, and youth‑led spaces
+        where you can move your body, connect with friends, and feel seen—without
+        needing perfect words, perfect outfits, or perfect vibes.
+      </p>
+
+      <h2>What This Site Is</h2>
+      <p>
+        This prototype is built like a teen‑friendly wellness magazine: part events
+        calendar, part culture zine, and part resource hub designed with Bay Area
+        students and educators in mind.
+      </p>
+      <ul class="about-list">
+        <li>Stories about community‑based movement and mental health.</li>
+        <li>Roundups of free or low‑cost events across the Bay.</li>
+        <li>Example layouts for youth‑centered media projects and curriculum.</li>
+      </ul>
+
+      <h2>Who It’s For</h2>
+      <p>
+        Hyphy &amp; Healing is for Bay Area teens, educators, and community
+        organizers who want mental health resources that feel culturally grounded,
+        joyful, and actually reachable after school or work.
+      </p>
+
+      <a class="about-back" href="index.html">← Back to Home</a>
+    </section>
+  </main>
+
+</body>
+</html>
